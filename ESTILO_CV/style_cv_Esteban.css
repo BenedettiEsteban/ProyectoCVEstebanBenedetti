@@ -1,0 +1,851 @@
+/**------------Configuraciones Generales del Cuerpo------------------**/
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgb(131, 195, 204);
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+}
+/**-------------Configuraciones Generales del Container y sus Columns---------------**/
+.contenedor{
+    display: flex;
+    width: 100%;
+    background-color:rgb(94, 94, 109);
+    flex-direction: row wrap ;
+    opacity: 0.9;
+    
+}
+.contenedor .lateral{ 
+    flex-basis: 20%;
+    /*border:solid brown 5px;*/
+    background-image: linear-gradient(to bottom, #09090a , #283e44);
+}
+.contenedor .central{
+    flex-basis: 80%;
+    /*border:solid  yellow 5px;*/
+    background-color:  #557b81;
+    
+}
+/*--------------Configuracion Column Lateral------------*/
+.lateral img{
+    width: 100%;
+    /*border: solid green 2px;*/    
+    padding-bottom: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+}
+.informacion_personal hr{
+    background-image: linear-gradient(to right, #328cf3 , #3fdaee);
+    border-radius: 15px;
+    margin: 3px;
+    height: 2px;
+}
+.informacion_personal h2{
+    text-align: center;
+    font-size: 16px;
+    font-style: oblique;
+    color: #00ffff98;
+}
+.informacion_personal p{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+/* Configuracion del Boton_Certificado*/
+.informacion_personal .boton_central{
+    text-align: center;
+}
+.boton_central button{
+    position: relative;
+    transition: 0.3s;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+}
+button:hover{
+    color: rgb(63, 238, 72, 0.4);
+    font-size: 13px;
+}
+#boton{  
+    background-color: #3189ac;
+    border-radius: 10px;
+}
+#mostrar{
+    color: #edeee7;
+    text-align: center;
+    margin: 2px;
+    text-decoration: none;
+}
+/* Configuracion de las Banderillas de Informacion_General*/
+#marco{
+    text-align: center;
+    background-color: #3b3d41;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+/* Configuracion de Banderillas de Contactos*/
+#marco_2{
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: groove red 10px;
+    background-image: linear-gradient(to right, #212122 , #5c6163);
+    text-align: center;
+    font-size: 12px;
+}
+#email{
+    padding-left: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: groove red 10px;
+    background-image: linear-gradient(to right, #212122 , #5c6163);
+    text-align: center;
+    font-size: 11px;
+}
+/* Configuracion de la Columna Central*/
+.central .encabezado{
+    background-image: linear-gradient(to right, #1e5ba0 , #278491);
+    border-left: groove #9e2424 12px;
+    text-align: center;
+    font-size: 16px;
+    font-style: oblique;
+    color: #abc1c4;
+    font-family: none;
+}
+.encabezado h1{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}  
+#nombre{
+    font-weight: normal;
+    color: #27373b;
+}
+#sub_titulo{
+    color: #cababa;
+    margin: 0%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-style: normal;
+}
+/* Configuracion carta de Presentacion*/
+.central .presentacion{
+    font-size: 12px;
+}
+.presentacion h2{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    color: #babac5;
+}
+#carta{
+    padding-left: 20px;
+    line-height: 14px;
+    color: #babac5;
+}
+.presentacion hr{
+    margin-left: 20px;
+    border: solid 1px;
+}
+/*Configuracion de Experiencia Laboral*/
+.experiencia_laboral hr{
+    margin-left: 20px;
+    border: solid 1px;
+    
+}
+.experiencia_laboral h2{
+    font-size: 16px;
+    padding-left: 20px;
+    color: #cfcfd3;
+    font-style: oblique;
+    text-align: center;
+}
+/* Configuramos Tabla de Experiencias*/
+.experiencia_laboral .tabla{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #babac5;
+    margin: 0px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.tabla th{
+    border-bottom: solid rgb(207, 207, 224) 1px;
+}
+.tabla tr td{
+    border-bottom: solid rgb(207, 207, 224) 1px;
+    padding: 15px 15px 5px 5px;
+    font-size: 13px;
+}
+.tabla span{
+    font-size: 11px;
+}
+/* Configuracion de los Botones*/
+.tabla button{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10px;
+    background-color: rgb(49, 121, 168) ;
+    border-radius: 15px;
+    margin: 0 20px;
+    margin-top: 3px;
+    padding: 5px 5px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+}
+button span{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: hsla(125, 83%, 56%, 0.3);
+    top: -3%;
+    left: -100%;
+    transition: 0.4s;
+}
+/* Configuracion de la animacion de los Botones*/
+button:hover span {
+    left: -8%;
+    z-index: -1;
+    position: absolute;
+}
+button:hover {
+    position: relative;
+    color: #d2fa21;
+    font-size: 11px;
+    z-index: 0;
+}
+/* Configuramos las ventanas Emergentes*/
+/*-----------* Configuracion de la Ventanas Emergente de (Fly)-------------------------*/
+.fly{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 7%, 0.747);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+.fly--show{
+    opacity: 1;
+    pointer-events: unset;
+    
+}
+
+
+.fly .fly_contenedor{
+    color: rgb(196, 208, 214);
+    margin: auto;
+    width: 80%;
+    background-color: rgba(177, 215, 221, 0.795);
+    max-width: 600px;
+    max-height: 80%;
+    border-radius: 8px;
+    padding: 1px 8px;
+    display: grid;
+    gap: 1px;
+    place-items: center;
+    grid-auto-columns: 100%;
+    font-size: 12px;
+    border:solid 5px rgba(77, 138, 196, 0.8);
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+.fly_contenedor .fly_encabezado{
+    width: 100%;
+    border: yellow 2px;
+    background-color: rgb(70, 66, 66);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+.fly_encabezado h2{
+    font-size: 18px;
+    text-align: center;
+}
+.fly_contenedor h3{
+    font-size: 12px;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.fly_contenedor h4{
+    font-size: 10px;
+    color: rgb(134, 22, 22);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.fly_contenedor p{
+    font-size: 12px;
+    color: rgb(35, 36, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.fly_contenedor hr{
+    width: 80%;
+}
+.fly_contenedor a{
+    width: 100%;
+}
+/* Configuracion del boton de la ventanas */
+.fly_cerrar button{
+    display: inline-block;
+    background-color: rgb(204, 61, 61);
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    transition: backgroud-color .3s;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.fly_cerrar button:hover{
+    color: rgb(204, 61, 61);
+    background-color: white;
+}
+/*-----------* Configuracion de la Ventanas Emergente de (Vig)-------------------------*/
+.vig{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 7%, 0.747);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+.vig--show{
+    opacity: 1;
+    pointer-events: unset;
+
+}
+.vig .vig_contenedor{
+    color: rgb(196, 208, 214);
+    margin: auto;
+    width: 80%;
+    background-color: rgba(177, 215, 221, 0.795);
+    max-width: 600px;
+    max-height: 80%;
+    border-radius: 8px;
+    padding: 1px 8px;
+    display: grid;
+    gap: 1px;
+    place-items: center;
+    grid-auto-columns: 100%;
+    font-size: 12px;
+    border:solid 5px rgba(77, 138, 196, 0.8);
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+.vig_contenedor .vig_encabezado{
+    width: 100%;
+    border: yellow 2px;
+    background-color: rgb(70, 66, 66);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+.vig_encabezado h2{
+    font-size: 18px;
+    text-align: center;
+}
+.vig_contenedor h3{
+    font-size: 12px;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.vig_contenedor h4{
+    font-size: 10px;
+    color: rgb(134, 22, 22);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.vig_contenedor p{
+    font-size: 12px;
+    color: rgb(35, 36, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.vig_contenedor hr{
+    width: 80%;
+}
+.vig_contenedor a{
+    width: 100%;
+}
+/* Configuracion del boton de la ventanas */
+.vig_cerrar button{
+    display: inline-block;
+    background-color: rgb(204, 61, 61);
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    transition: backgroud-color .3s;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+.vig_cerrar button:hover{
+    color: rgb(204, 61, 61);
+    background-color: white;
+}
+/*-----------* Configuracion de la Ventanas Emergente de (Carp)-------------------------*/
+.carp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 7%, 0.747);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+.carp--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+.carp .carp_contenedor{
+    color: rgb(196, 208, 214);
+    margin: auto;
+    width: 80%;
+    background-color: rgba(177, 215, 221, 0.795);
+    max-width: 600px;
+    max-height: 80%;
+    border-radius: 8px;
+    padding: 1px 8px;
+    display: grid;
+    gap: 1px;
+    place-items: center;
+    grid-auto-columns: 100%;
+    font-size: 12px;
+    border:solid 5px rgba(77, 138, 196, 0.8);
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+.carp_contenedor .carp_encabezado{
+    width: 100%;
+    border: yellow 2px;
+    background-color: rgb(70, 66, 66);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+.carp_encabezado h2{
+    font-size: 18px;
+    text-align: center;
+}
+.carp_contenedor h3{
+    font-size: 12px;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.carp_contenedor h4{
+    font-size: 10px;
+    color: rgb(134, 22, 22);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.carp_contenedor p{
+    font-size: 12px;
+    color: rgb(35, 36, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.carp_contenedor hr{
+    width: 80%;
+}
+.carp_contenedor a{
+    width: 100%;
+}
+/* Configuracion del boton de la ventanas */
+.carp_cerrar button{
+    display: inline-block;
+    background-color: rgb(204, 61, 61);
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    transition: backgroud-color .3s;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+.carp_cerrar button:hover{
+    color: rgb(204, 61, 61);
+    background-color: white;
+}
+/*-----------* Configuracion de la Ventanas Emergente de (PPP)-------------------------*/
+.ppp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 7%, 0.747);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    
+}
+.ppp--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+.ppp .ppp_contenedor{
+    color: rgb(196, 208, 214);
+    margin: auto;
+    width: 80%;
+    background-color: rgba(177, 215, 221, 0.795);
+    max-width: 600px;
+    max-height: 80%;
+    border-radius: 8px;
+    padding: 1px 8px;
+    display: grid;
+    gap: 1px;
+    place-items: center;
+    grid-auto-columns: 100%;
+    font-size: 12px;
+    border:solid 5px rgba(77, 138, 196, 0.8);
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+.ppp_contenedor .ppp_encabezado{
+    width: 100%;
+    border: yellow 2px;
+    background-color: rgb(70, 66, 66);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+.ppp_encabezado h2{
+    font-size: 18px;
+    text-align: center;
+}
+.ppp_contenedor h3{
+    font-size: 12px;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.ppp_contenedor h4{
+    font-size: 10px;
+    color: rgb(134, 22, 22);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.ppp_contenedor p{
+    font-size: 12px;
+    color: rgb(35, 36, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ppp_contenedor hr{
+    width: 80%;
+}
+.ppp_contenedor a{
+    width: 100%;
+}
+/* Configuracion del boton de la ventanas */
+.ppp_cerrar button{
+    display: inline-block;
+    background-color: rgb(204, 61, 61);
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    transition: backgroud-color .3s;
+    margin-left: 0;
+    margin-right: 0;
+}
+.ppp_cerrar button:hover{
+    color: rgb(204, 61, 61);
+    background-color: white;
+}
+/*-----Configuramos el Pie de Pagina con la tabla de Lineas de experiencia-----------*/
+.pieDePagina{
+    text-align: center;
+    font-size: 12px;
+    background-color: rgba(54, 147, 184, 0.712);
+    padding-top: 1px;
+    color: rgb(233, 241, 241);
+    font-family: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    opacity: 0.7;
+}
+.tabla_final{
+    width: 100%;
+    text-align: center;
+    color: black;
+    
+}
+.tabla_final th{
+    font-size: 12px;
+    color: rgb(247, 233, 48);
+    border-right: solid rgb(233, 20, 20) 1px;
+    border-left: solid rgb(233, 20, 20) 1px;
+}
+.tabla_final td{
+    width: 33%;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    padding-right: 5px;
+    color: white;
+    border-right: solid rgb(233, 20, 20) 1px;
+    border-left: solid rgb(233, 20, 20) 1px;
+}
+
+/*---Configuramos las Barras de Progreso-----*/
+/*.barra-progreso:not(:last-child) {
+    width: 80%;
+}*/
+.barra-animada{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.menu {
+    position: relative;
+    border: 1px solid rgb(0, 238, 255);
+    border-radius: 20px;
+}
+.menu div {
+    position: relative;
+    width: 0;
+    height: 4px;
+    border-radius:  10px; 
+    background-color: rgb(60, 255, 0);
+}
+/**Animacion de Conocimientos*/
+#ingles-menu {
+    animation: ingles-barra 5s forwards;
+}
+
+@keyframes ingles-barra {
+    100%{
+        width: 40%;
+        
+    }
+}
+#excel-menu {
+    animation: excel-barra 5s forwards;
+}
+
+@keyframes excel-barra {
+    100%{
+        width: 85%;
+    }
+}
+#solid-menu {
+    animation: solid-barra 5s forwards;
+}
+
+@keyframes solid-barra {
+    100%{
+        width: 80%;
+    }
+}
+#frances-menu {
+    animation: frances-barra 5s forwards;
+}
+
+@keyframes frances-barra {
+    100%{
+        width: 60%;
+    }
+}
+#phyton-menu {
+    animation: phyton-barra 5s forwards;
+}
+
+@keyframes phyton-barra {
+    100%{
+        width: 40%;
+    }
+}
+#cad-menu {
+    animation: cad-barra 5s forwards;
+}
+
+@keyframes cad-barra {
+    100%{
+        width: 75%;
+    }
+}
+#portu-menu {
+    animation: portu-barra 5s forwards;
+}
+
+@keyframes portu-barra {
+    100%{
+        width: 30%;
+    }
+}
+#java-menu {
+    animation: java-barra 5s forwards;
+}
+
+@keyframes java-barra {
+    100%{
+        width: 40%;
+    }
+}
+#sket-menu {
+    animation: sket-barra 5s forwards;
+}
+
+@keyframes sket-barra {
+    100%{
+        width: 90%;
+    }
+}
+#ruby-menu {
+    animation: ruby-barra 5s forwards;
+}
+
+@keyframes ruby-barra {
+    100%{
+        width: 40%;
+    }
+}
+#html-menu {
+    animation: html-barra 5s forwards;
+}
+
+@keyframes html-barra {
+    100%{
+        width: 50%;
+    }
+}
+#css-menu {
+    animation: css-barra 5s forwards;
+}
+
+@keyframes css-barra {
+    100%{
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
